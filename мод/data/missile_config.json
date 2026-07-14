@@ -1,0 +1,76 @@
+{
+  "missileSystem": {
+    "name": "Three-Stage Missile System",
+    "version": "1.0.0",
+    "enabled": true,
+    "stages": {
+      "stage1": {
+        "name": "Launch",
+        "speed": 55,
+        "duration": 2.0,
+        "acceleration": 20,
+        "description": "Slow launch from barrel"
+      },
+      "stage2": {
+        "name": "Ascent",
+        "speed": 800,
+        "targetAltitude": 1500,
+        "duration": 2.5,
+        "acceleration": 250,
+        "description": "Acceleration and climb to 1500m"
+      },
+      "stage3": {
+        "name": "Cruise",
+        "speed": 750,
+        "cruiseAltitude": 1200,
+        "deceleration": 50,
+        "description": "Flight to target"
+      }
+    },
+    "damageModel": {
+      "baseDamage": 500,
+      "explosionRadius": 100,
+      "damageMultiplier": 1.0,
+      "armorPenetration": 0.8
+    },
+    "physics": {
+      "weight": 45,
+      "mass": 45,
+      "dragCoefficient": 0.47,
+      "gravity": 9.81,
+      "maxFlightTime": 8.0
+    },
+    "targeting": {
+      "trackingAccuracy": 0.95,
+      "minEngagementRange": 50,
+      "maxEngagementRange": 2000,
+      "autoAim": true
+    },
+    "fireControl": {
+      "fireRate": 3.5,
+      "reloadTime": 6.0,
+      "ammoCapacity": 12,
+      "projectilesPerShot": 1
+    }
+  },
+  "balancing": {
+    "difficultyMultipliers": {
+      "easy": 1.0,
+      "normal": 1.0,
+      "hard": 1.2,
+      "expert": 1.5
+    },
+    "costInGameCurrency": 5000,
+    "researchRequired": true
+  },
+  "effects": {
+    "launchEffect": "missile_launch_fx",
+    "explosionEffect": "missile_explosion_fx",
+    "smokeTrail": true,
+    "soundFX": {
+      "launch": "missile_launch_sound",
+      "explosion": "missile_explosion_sound",
+      "flying": "missile_flying_sound"
+    }
+  }
+}
