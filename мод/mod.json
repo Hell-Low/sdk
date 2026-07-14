@@ -1,0 +1,27 @@
+{
+  "modName": "Three-Stage Missile System",
+  "modNameRU": "Трёхстадийная система ракет",
+  "version": "1.0.0",
+  "author": "Hell-Low",
+  "description": "Advanced three-stage missile system with improved ballistics and precision targeting",
+  "descriptionRU": "Улучшенная трёхстадийная система ракет с лучшей баллистикой и точным наведением",
+  "gameVersion": "2026.7.x.x",
+  "isPreview": false,
+  "isDefinitiveOnly": false,
+  "dependencies": [],
+  "scripts": {
+    "main": "scripts/main.lua",
+    "missile": "scripts/missile.lua",
+    "integration": "scripts/diy_missile_integration.lua"
+  },
+  "data": {
+    "config": "data/missile_config.json"
+  },
+  "tags": [
+    "weapon",
+    "missile",
+    "gameplay",
+    "balance"
+  ],
+  "category": "weapon_enhancement"
+}
